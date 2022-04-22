@@ -1,0 +1,2 @@
+# projectstrok
+all
