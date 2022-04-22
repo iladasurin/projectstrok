@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"/>
+ <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+ <link rel="stylesheet" href="home.css" type="text/css"/>
+ <link rel="stylesheet" href="fontawesome-free-5.11.2-web (1)\fontawesome-free-5.11.2-web\css\all.css" type="text/css"/>
+ <title>Welcome</title>
+</head>
+<body>
+ <div class="main-container">
+  <div class="sub-container">
+  <div class="" style="display:block" id="main">
+   <div class="logo-container">
+    
+
+   </div>
+   <div ><h1 class="wel">Welcome</h1>
+   <button class="btn-left" >เพิ่มผู้ดูแลระบบ<i class="fas fa-arrow-right" style="padding-left:6px;"></i></button>
+
+  </div>
+  </div>
+  <div class="sign-in" style="display:none;" id="secondView">
+   <div class="right-sign-in" id='right'>
+         <h1 class="sign-up-heading">Sign Up</h1>
+      <h1 class="dots">...</h1>
+      <div class="sign-up-input">
+     <input type="text" placeholder="Enter your name" class="txt"/>
+     <input type="email" placeholder="Enter your email" class="txt"/>
+     <input type="password" placeholder="Enter your password" class="txt"/>
+     <input type="password" placeholder="Re-Enter your password" class="txt"/>
+     <input type="button" value="Sign Up" class="btn"/>
+     <h3 class="copyright">&copy; Designed & Developed By Waseem</h3>
+      </div>
+   </div>
+   <div class="left-sign-in" id='left'>
+   <img src="front-end-inner.png" height="300px" width="300px" class="img" alt=""/>
+    <div class="cont">
+    
+    </div>
+   </div>
+  <div>
+  </div>
+  
+  </div>
+  <div class="log-in" style="display:none" id="thirdView">
+  
+   <div class="right-sign-in" id='right_sign'>
+         <h1 class="sign-up-heading">Sign In</h1>
+      <h1 class="dots">...</h1>
+      <div class="sign-up-input">
+     <input type="text" placeholder="Username" class="txt"/>
+     
+     <input type="password" placeholder="Password" class="txt"/>
+     
+     <input type="button" value="Sign In" class="btn"/>
+     <h3 class="copyright">&copy; Designed & Developed By Waseem</h3>
+     
+      </div>
+   </div>
+   <div class="left-sign-in" id='left_sign'>
+   <img src="4.png" height="300px" width="300px" class="img" alt=""/>
+    <div class="cont">
+    <div class="logo"><i class="fas fa-house-damage" style="color:black;font-size:20px;padding:8px 0px 0px 8px"></i></div>
+    <h3 class="logo-text">DiGi</h3>
+    </div>
+   </div>
+  
+  
+  </div>
+  
+  
+ 
+ </div>
+ <script>
+ var btnSignUp=document.getElementById('sign-up-button');
+ var btnSignIn=document.getElementById('sign-in-button');
+ var firstView=document.getElementById('main');
+ var signUpView=document.getElementById('secondView');
+ var loginView=document.getElementById('thirdView');
+ var left=document.getElementById('left');
+ var right=document.getElementById('right');
+ var left_sign=document.getElementById('left_sign');
+ var right_sign=document.getElementById('right_sign');
+ btnSignUp.onclick=function(){
+ firstView.style.display="none";
+ signUpView.style.display="block";
+ 
+  var pos1 = -100;
+  var pos=-100;
+    var id1 = setInterval(frame, 5);
+    function frame() {
+    if (pos1 ==0) {
+      clearInterval(id1);
+  // func();
+    } else {
+      pos1++; 
+      left.style.left= pos1 + 'px'; 
+   pos++; 
+      right.style.right= pos + 'px'; 
+      
+       
+    }
+  }
+ 
+ /*/function func(){
+ var pos = -100;
+    var id = setInterval(frame, 10);
+    function frame() {
+    if (pos ==0) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      right.style.right= pos + 'px'; 
+      
+       
+    }
+  }//}*/
+ }
+ btnSignIn.onclick=function(){
+ firstView.style.display="none";
+ thirdView.style.display="block";
+  var pos2 = -100;
+  var pos3=-100;
+    var id2 = setInterval(frame, 5);
+    function frame() {
+    if (pos2 ==0) {
+      clearInterval(id2);
+  // func();
+    } else {
+      pos2++; 
+      left_sign.style.left= pos2 + 'px'; 
+   pos3++; 
+      right_sign.style.right= pos3 + 'px'; 
+      
+       
+    }
+ }
+ }
+ </script>
+</body>
+</html>
