@@ -21,5 +21,5 @@
     echo $sql;
     mysqli_close($conn);
     header("Location: select.php");
-   //sg
+   
 ?>
