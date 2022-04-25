@@ -1,116 +1,106 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Generic - Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
 
-		<!-- Header -->
-			<header id="header">
-				<a href="select.php" class="title"><img src="images/pngwing.com.png" title="Edit" style="width:30px;height: 30px;"  ></a>
-				<nav>
-					<ul>
-						<li><a href="select.php">Home</a></li>
-						<li><a href="generic.html" class="active">Generic</a></li>
-						<li><a href="elements.html">Elements</a></li>
-					</ul>
-				</nav>
-			</header>
+<head>
+    <title>โปรแกรมจำแนกโรคหลอดเลือดสมอง</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body class="is-preload">
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">แก้ไขผู้ดูแลระบบ</h1>
-							<body class="body">
-								<table width="1024" border="0" align="center" cellpadding="0" cellspacing="0">
-								  <tr>
-									  <tr>
-										<td width="190" align="center"><br />
-										<button  formaction= "select.php" class="button button1" >ย้อนกลับ</button><br /></td>
-										<td width="538"></td>
-										<td width="165">&nbsp;</td>
-									  </tr>
-									  <tr>
-										<td>&nbsp;</td>
-										<td>
-											<div>
-								  <form action="edit.php" method="POST">
-									<label for="Uname">ชื่อผู้ใช้</label>
-									<input type="text" id="Uname" name="Username" placeholder="กรอกชื่อผู้ใช้..">
-								
-									<label for="Pass">รหัสผ่าน</label>
-									<input type="text" id="Pass" name="password" placeholder="กรอกรหัสผ่าน..">
-									
-									<label for="fname">ชื่อ</label>
-									<input type="text" id="fname" name="firstname" placeholder="กรอกชื่อ..">
-								
-									<label for="lname">นามสกุล</label>
-									<input type="text" id="lname" name="lastname" placeholder="กรอกนามสกุล..">
-									
-									<label for="add">ที่อยู่</label>
-									<input type="text" id="add" name="address" placeholder="กรอกที่อยู่..">
-								
-									<label for="phone">เบอร์ติดต่อ</label>
-									<input type="text" id="phone" name="phone" placeholder="กรอกเบอร์โทรติดต่อ..">
-								
-									<label for="status">สถานะการใช้งาน</label>
-									<select id="status" name="status">
+    <!-- Header -->
+    <header id="header">
+        <a href="select.php" class="title"><img src="images/pngwing.com.png" title="Edit" style="width:30px;height: 30px;"></a>
+        <nav>
+            <ul>
+                <li><a href="select.php">หน้าหลัก</a></li>
+                <li><a href="generic.html" class="active">เพิ่มผู้ดูแลระบบ</a></li>
+                <li><a href="elements.html">Elements</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <section id="main" class="wrapper">
+            <div class="inner">
+                <h1 class="major">แก้ไขผู้ดูแลระบบ</h1>
+
+                <body class="body">
+                    <table class="alt">
+                        <tr>
+                            <tr>
+                                <td width="190" align="center"><br />
+                                    <button formaction="select.php" class="button button1">ย้อนกลับ</button><br /></td>
+                                <td width="538"></td>
+                                <td width="165">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>
+                                    <div>
+                                        <form action="edit.php" method="POST">
+                                            <label for="Uname">ชื่อผู้ใช้</label>
+                                            <input type="text" id="Uname" name="Username" placeholder="กรอกชื่อผู้ใช้..">
+
+                                            <label for="Pass">รหัสผ่าน</label>
+                                            <input type="text" id="Pass" name="password" placeholder="กรอกรหัสผ่าน..">
+
+                                            <label for="fname">ชื่อ</label>
+                                            <input type="text" id="fname" name="firstname" placeholder="กรอกชื่อ..">
+
+                                            <label for="lname">นามสกุล</label>
+                                            <input type="text" id="lname" name="lastname" placeholder="กรอกนามสกุล..">
+
+                                            <label for="add">ที่อยู่</label>
+                                            <input type="text" id="add" name="address" placeholder="กรอกที่อยู่..">
+
+                                            <label for="phone">เบอร์ติดต่อ</label>
+                                            <input type="text" id="phone" name="phone" placeholder="กรอกเบอร์โทรติดต่อ..">
+
+                                            <label for="status">สถานะการใช้งาน</label>
+                                            <select id="status" name="status">
 									  <option selected disabled>โปรดเลือก</option>
 									  <option >กำลังใช้งาน</option>
 									  <option >ไม่ใช้งาน</option>
 									</select>
-								  <br>
-									<input type="submit" value="ยืนยัน">
-								  </form>
-								</div>
-										</td>
-										<td>&nbsp;</td>
-									  </tr>
-									  <tr>
-										<td height="22">&nbsp;</td>
-										<td>&nbsp;</td>
-										<td>&nbsp;</td>
-									  </tr>
-									</table></td>
-								  </tr>
-								  <tr>
-								  </tr>
-								</table>
-								</body>
-						</div>
-					</section>
+                                            <br>
+                                            <input type="submit" value="ยืนยัน">
+                                        </form>
+                                    </div>
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td height="22">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                    </table>
+                    </td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    </table>
+                </body>
+            </div>
+        </section>
+    </div>
 
-			</div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+</body>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
