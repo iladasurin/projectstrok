@@ -89,7 +89,8 @@ echo "<table class='responstable' border=1 width= “500” height= “400” >"
 
 	$editURL = "editform.php?eid=".$value['ID'];
     ?>
-    <td><a href="delete.page?id=1" onclick="return confirm('ต้องการลบหรือไม่?')">
+	<td><a href="delete_admin.php?id=<?php echo $value["ID"];?>" onclick="return confirm('ต้องการลบหรือไม่?')">
+    <!-- <td><a href="delete.page?id=1" onclick="return confirm('ต้องการลบหรือไม่?')"> -->
 	<img src="icons/delete1.png" title="Delete" style="width:30px;height: 30px;"  ></a></td>                 
 	<td><a href="<?=$editURL?>"><img src="icons/edit1.png" title="Edit" style="width:30px;height: 30px;"  ></td>
 <?php 
